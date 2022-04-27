@@ -1,6 +1,5 @@
-﻿// connected
-using Common;
-
+﻿using Common;
+// connected
 using System;
 using System.Collections.Generic;
 using System.Net;

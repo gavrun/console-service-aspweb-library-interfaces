@@ -1,5 +1,9 @@
-﻿using System;
+﻿// connected
+using Common;
+
+using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text.Json;
 
 namespace Library
@@ -31,7 +35,8 @@ namespace Library
         public List<Person> GetPeople()
         {
             string address = $"{baseUri}/people";
-            string reply = client.DowloadString(address);
+
+            string reply = client.DownloadString(address); //autocorrected typo
 
             var result = JsonSerializer.Deserialize<List<Person>>(reply, options);
 

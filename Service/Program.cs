@@ -21,7 +21,7 @@ namespace Service
                 .ConfigureWebHostDefaults(webBuilder =>
                     {
                         webBuilder.UseStartup<Startup>()
-                                  .UseUrls("https://localhost:5101;http://localhost:5100");
+                                  .UseUrls("https://localhost:5001;http://localhost:5000");
                     }
                 );
     }

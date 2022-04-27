@@ -1,7 +1,6 @@
 using System;
 
-// to be removed because Views not needed here
-
+// to be removed because Views not used here
 namespace Service.Models
 {
     public class ErrorViewModel

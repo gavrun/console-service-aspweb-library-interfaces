@@ -19,9 +19,10 @@ namespace Service
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                    //.UseUrls("http://localhost:9874");
-                });
+                    {
+                        webBuilder.UseStartup<Startup>()
+                                  .UseUrls("https://localhost:5001;http://localhost:5000");
+                    }
+                );
     }
 }

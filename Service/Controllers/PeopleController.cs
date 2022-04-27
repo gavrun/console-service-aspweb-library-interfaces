@@ -49,7 +49,6 @@ namespace Service.Controllers
             return _provider.GetPeople().First(p => p.Id == id);
         }
 
-
         //public HomeController(ILogger<HomeController> logger)
         //{
         //    _logger = logger;
@@ -70,6 +69,5 @@ namespace Service.Controllers
         //{
         //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         //}
-
     }
 }

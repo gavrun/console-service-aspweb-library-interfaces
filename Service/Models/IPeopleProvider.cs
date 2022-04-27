@@ -1,6 +1,5 @@
-﻿//connect to ?
-using Common;
-
+﻿using Common;
+//connected
 using System.Collections.Generic;
 
 namespace Service.Models

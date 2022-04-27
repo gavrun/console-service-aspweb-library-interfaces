@@ -14,7 +14,7 @@ namespace Library
 
         #region Service initializers
         WebClient client = new WebClient();
-        string baseUri = "http://localhost:9874";
+        string baseUri = "https://localhost:5001;http://localhost:5000"; //changed ports
         JsonSerializerOptions options =
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         #endregion

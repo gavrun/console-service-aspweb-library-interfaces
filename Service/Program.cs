@@ -21,6 +21,7 @@ namespace Service
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    //.UseUrls("http://localhost:9874");
                 });
     }
 }

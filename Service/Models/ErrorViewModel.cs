@@ -1,5 +1,7 @@
 using System;
 
+// to be removed because Views not needed here
+
 namespace Service.Models
 {
     public class ErrorViewModel

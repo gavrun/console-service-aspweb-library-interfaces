@@ -2,7 +2,7 @@
 
 namespace Common
 {
-    //common class for person
+    //common class for person object
     public class Person
     {
         public int Id { get; set; }
@@ -13,13 +13,13 @@ namespace Common
         public string? FormatString { get; set; }
 
         //overriding ToString ? why?
-        public override string ToString()
+        public override string ToString() //misplaced return
         {
             if (string.IsNullOrEmpty(FormatString))
             {
                 FormatString = "{0} {1}";
-                return string.Format(FormatString, GivenName, FamilyName);
             }
+            return string.Format(FormatString, GivenName, FamilyName);
         }
     }
 }

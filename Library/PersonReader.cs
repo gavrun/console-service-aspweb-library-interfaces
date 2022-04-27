@@ -14,7 +14,7 @@ namespace Library
 
         #region Service initializers
         WebClient client = new WebClient();
-        string baseUri = "https://localhost:5001;http://localhost:5000"; //changed ports
+        string baseUri = "http://localhost:5000"; //changed ports
         JsonSerializerOptions options =
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         #endregion
@@ -36,7 +36,7 @@ namespace Library
         {
             string address = $"{baseUri}/people";
 
-            string reply = client.DownloadString(address); //autocorrected typo
+            string reply = client.DownloadString(address); //autocorrected string to var then to string?
 
             var result = JsonSerializer.Deserialize<List<Person>>(reply, options);
 
